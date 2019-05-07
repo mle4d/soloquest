@@ -4,20 +4,20 @@ const test = QUnit.test;
 QUnit.moddule('makeUser');
 test('create user object from form data', (assert) => {
   // arrange
-  const formData = new FormData();
+    const formData = new FormData();
   // set the values that would be from the form,
   // remember these are strings!
-  formData.set('username', 'emanresu');
-  formData.set('style', 'PIP');
-  const expected = {
-    username: 'emanresu',
-    style: 'PIP',
-    cash: $20,
-    fauxpas: 0
-  };
+    formData.set('username', 'emanresu');
+    formData.set('style', 'PIP');
+    const expected = {
+        username: 'emanresu',
+        style: 'PIP',
+        cash: 20,
+        fauxpas: 0
+    };
   // act
-  const user = makeUser(formData);
+    const result = makeUser(formData);
 
   // assert
-  assert.deepEqual(result, expected);
+    assert.deepEqual(result, expected);
 });
