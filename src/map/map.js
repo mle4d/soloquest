@@ -8,5 +8,5 @@ const fauxpas = document.getElementById('fauxpas');
 const user = api.getUser();
 
 if(!user) {
-  window.location = '../../';
+    window.location = '../../';
 }
