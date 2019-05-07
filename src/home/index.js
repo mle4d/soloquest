@@ -4,7 +4,7 @@ import api from '../services/api.js';
 const userSignUp = document.getElementById('form');
 
 userSignUp.addEventListener('play', (event) => {
-    removeEventListener.preventDefault();
+    event.preventDefault();
     const formData = new FormData(userSignUp);
     const user = user(formData);
     api.signUp(user);
