@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/styles.css">
+  <title>Killer Closet</title>
+</head>
+<body>
+  <header>
+    <h1>Some Looks Can Kill</h1>
+  </header>
+  <main>
+    <h2>Sign Up to Play Now!</h2>
+    <form id="form">
+      <label for="name">Username:</label>
+      <input id="username" name="username" type="text">
+    <fieldset>
+        <legend>Pick a Style!</legend>
+      <label for="PIP"><img src="">
+        Pretty in Pink
+        <input type="radio" name="style" id="PIP" required value="PIP">
+      </label>
+
+      <label for="HHH"><img src="">
+         Hip-Hipster-Hurray
+        <input type="radio" name="style" id="HHH" required value="HHH">
+      </label>
+
+      <label for="PB"><img src="">
+          Punky Bootster
+        <input type="radio" name="style" id="PB" required value="PB">
+      </label>
+
+      <label for="MP"><img src="">
+          Mom Pants
+        <input type="radio" name="style" id="MP" required value="MP">
+      </label>
+      <button id="play">Get Dressed!</button>
+    </fieldset>
+    </form>
+  </main>
+  <script type="module" src="./src/home/index.js"></script>
+</body>
+</html>
