@@ -9,15 +9,16 @@
 </head>
 <body>
   <header>
-    <h1>Some Looks Can Kill</h1>
+    <h1>Some Looks <i>Can</i> Kill</h1>
   </header>
   <main>
     <h2>Sign Up to Play Now!</h2>
     <form id="form">
-      <label for="name">Username:</label>
-      <input id="username" name="username" type="text">
     <fieldset>
-        <legend>Pick a Style!</legend>
+        <label for="name">Username:</label>
+        <input id="username" name="username" type="text">
+        <legend>Pick a Name &amp; Style!</legend>
+        
       <label for="PIP"><img src="">
         Pretty in Pink
         <input type="radio" name="style" id="PIP" required value="PIP">
@@ -37,7 +38,9 @@
           Mom Pants
         <input type="radio" name="style" id="MP" required value="MP">
       </label>
+      <p>
       <button id="play">Get Dressed!</button>
+      </p>
     </fieldset>
     </form>
   </main>
