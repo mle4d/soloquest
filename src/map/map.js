@@ -1,6 +1,6 @@
 import api from '..services/api.js';
 
-const username = document.getElementById('username');
+const user = document.getElementById('username');
 const style = document.getElementById('style-choice');
 const cash = document.getElementById('cash');
 const fauxpas = document.getElementById('fauxpas');
