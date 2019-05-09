@@ -1,4 +1,5 @@
 import api from '../src/services/api.js';
+import questArray from '../src/services/quest-data.js';
 const test = QUnit.test;
 
 QUnit.module('api');
@@ -21,4 +22,20 @@ test('save user and retrive user correctly', (assert) => {
     const result = api.getUser();
 
     assert.deepEqual(result, expected);
+});
+
+test('api to get user', (assert)=> {
+    const expected = questArray;
+
+    const result = api.getQuests();
+
+    assert.deepEqual(result, expected);
+});
+
+test('retrun users', (assert) => {
+    const expectedQuest = questArray[1];
+    const foundQuest = api.getQuest(expectedQuest.id);
+
+    assert.deepEqual(foundQuest, expectedQuest);
+
 });
