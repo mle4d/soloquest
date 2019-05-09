@@ -1,4 +1,4 @@
-import createChoice from '../src/quest/create-choice.js';
+import createChoice from '../src/Quest/create-choice.js';
 const test = QUnit.test;
 QUnit.module('createChoices');
 
