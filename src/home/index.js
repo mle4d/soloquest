@@ -7,6 +7,7 @@ userSignUp.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(userSignUp);
     const user = makeUser(formData);
+    // should signUp be saveUser
     api.signUp(user);
     window.location = './src/map/map.html';
 });
