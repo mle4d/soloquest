@@ -24,7 +24,7 @@ test('Adjust user profile based on quest choice', (assert) => {
     const expected = {
         name: 'emanresu',
         style: 'PIP',
-        mood: 50,
+        cash: 50,
         fauxpas: 0,
         completed: {
             pants: true
