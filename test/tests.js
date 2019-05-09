@@ -1,4 +1,7 @@
-import '../test/make-user.test.js';
-import '../test/api.test.js';
-import '../test/create-quest-link.test';
-import '../test/create-completed-quest.test';
+import './make-user.test';
+import './api.test';
+import './create-quest-link.test';
+import './create-completed-quest.test';
+import './score-quest.test';
+import './find-by-id';
+import './create-choice.test';

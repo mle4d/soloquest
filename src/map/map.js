@@ -13,6 +13,6 @@ if(!user) {
 
 username.textcontext = user.name;
 //fix this avatar part to be correct//
-style.src = 'assets/' + style.choice + 'jpg';
+style.src = 'assets/' + style.choice + 'png';
 cash.textContent = user.cash;
 fauxpas.textContent = user.fauxpas;
