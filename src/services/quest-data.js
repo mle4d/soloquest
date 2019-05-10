@@ -12,7 +12,7 @@ const pants = {
       Classic choice! Denim goes with everything. Except for more denim, maybe.
     `,
         cash: 10,
-        fauxpas: 0
+        fauxpas: 10
 
     }, {
         id: 'pick-black-pants',
@@ -20,7 +20,7 @@ const pants = {
         result: `
       Cool and edgy, just like you!
     `,
-        cash: 20,
+        cash: 25,
         fauxpas: 0
     }, {
         id: 'pick-skirt',
@@ -28,7 +28,7 @@ const pants = {
         result: `
       Bold and beautiful choice!
       `,
-        cash: 25,
+        cash: 20,
         fauxpas: 0
     }]
 };
@@ -46,8 +46,8 @@ const tops = {
         result: `
           A strong choice!
           `,
-        cash: 10,
-        fauxpas: 0
+        cash: 5,
+        fauxpas: 15
     }, {
         id: 'pick-blouse',
         description: 'Pink Blouse',
@@ -55,7 +55,7 @@ const tops = {
           Pink & pretty, this top adds femininity to any outfit
           `,
         cash: 15,
-        fauxpas: 0
+        fauxpas: 5
     }, {
         id: 'pick-tshirt',
         description: 'Dead Kennedys Baseball Tee',
@@ -89,8 +89,15 @@ const jackets = {
           `,
         cash: 0,
         fauxpas: 5
-
+    }, {
+        id: 'pick denim jacket',
+        description: 'Denim Jacket',
+        result: `Dress them up or down, denim jackets are always nice to have around!
+       `,
+        cash: 10,
+        fauxpas: 10
     }]
+
 };
 
 const questArray = [pants, tops, jackets];
