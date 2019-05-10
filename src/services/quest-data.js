@@ -1,6 +1,10 @@
 const pants = {
     id: 'pants',
     title: 'Pick a Bottom',
+    map: {
+        top: '90%',
+        left: '40%'
+    },
     image: 'pantsquest.png',
     description: `
     Start your outfit by choosing a bottom. Pick what suits your style best, or have fun & pick something a little different than your usual go-to!
@@ -36,6 +40,10 @@ const pants = {
 const tops = {
     id: 'tops',
     title: 'Pick a Top',
+    map: {
+        top: '25%',
+        left: '80%'
+    },
     image: 'shirtquest.png',
     description: `
         Now that you have your bottoms picked out, choose a top! Match to your pants, or your mood.
@@ -69,6 +77,10 @@ const tops = {
 const jackets = {
     id: 'jackets',
     title: 'Pick a Jacket',
+    map: {
+        top: '75%',
+        left: '20%'
+    },
     image: 'jacketsquest.png',
     description: `
         Your final layer. How will you stay warm by looking cool?

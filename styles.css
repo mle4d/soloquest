@@ -1,14 +1,13 @@
 body{
-  background: lightgray;
+  background: white;
   height: 300px;
   width: 1000px;
   align-content: center;
 }
 header{
-  background: lightgrey url(./src/assests/headingquest.png)  no-repeat;
-  height: 300px;
-  width: 1000px;
-  align-content: center;
+  background: white url(./src/assests/headingquest.png)  no-repeat center;
+  width: 100%;
+  padding: 4px;
 }
 h1{
   font-size: 100px;
