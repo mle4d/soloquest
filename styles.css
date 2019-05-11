@@ -1,16 +1,46 @@
 body{
   background: white;
   height: 300px;
-  width: 1000px;
-  align-content: center;
+  width: 900px;
+
 }
 header{
   background: white url(./src/assests/headingquest.png)  no-repeat center;
-  width: 100%;
+  width: 900px;
   padding: 4px;
+  height: 200px;
+  margin-left: 32px;
+  margin-right: auto;
 }
 h1{
   font-size: 100px;
   text-align: center;
   color: rgb(29, 27, 27) ;
+}
+h2{
+  text-align: center;
+}
+fieldset{
+  margin-left: auto;
+  text-align: center;
+  font-size: 10px;
+  width: 800px;
+  height: 225px;
+  background: url(./src/assests/questbg.png) no-repeat center;
+}
+.style {
+  margin-top: 80%;
+  padding: 60px;
+}
+input {
+  top: 40%;
+}
+p {
+  width: 200px;
+  height: 30px;
+  margin-left: 425px;
+  margin-right: 400px;
+}
+#something {
+  margin-top: 18%;
 }

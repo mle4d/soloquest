@@ -1,26 +1,22 @@
 import api from '../services/api.js';
 import createQuestLink from './create-quest-link.js';
+import loadProfile from '../load-profile.js';
+import createCompletedQuest from './create-completed-quest.js';
 
-const username = document.getElementById('username');
-const style = document.getElementById('style-choice');
-const cash = document.getElementById('cash');
-const fauxpas = document.getElementById('fauxpas');
-const nav = document.getElementById('quest');
-const user = api.getUser();
+loadProfile();
+
+const nav = document.getElementById('guests');
 
 const quests = api.getQuests();
+const user = api.getUser();
 
-if(!user) {
-    window.location = '../../';
-}
 for(let i = 0; i < quests.length; i++) {
-    let questDisplay = null;
-    questDisplay = createQuestLink(quests[i]);
-    nav.appendChild(questDisplay);
+    let quest = quest[i];
+    let dom = null;
+    if(user.completed[quest.id]) {
+        dom = createCompletedQuest(quest);
+    } else {
+        dom = createQuestLink(quest);
+    }
+    nav.appendChild(dom);
 }
-
-username.textcontext = user.name;
-//fix this avatar part to be correct//
-style.src = 'assets/' + style.choice + 'png';
-cash.textContent = user.cash;
-fauxpas.textContent = user.fauxpas;
