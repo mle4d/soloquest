@@ -4,7 +4,7 @@ function makeUser(formData) {
         style: formData.get('style'),
         cash: 20,
         fauxpas: 0,
-        completed: {}
+        //completed: {}
     };
     return user;
 
