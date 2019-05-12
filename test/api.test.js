@@ -18,7 +18,7 @@ test('save user and retrive user correctly', (assert) => {
         fauxpas: 0
     };
 
-    api.signUp(expected);
+    api.saveUser(expected);
     const result = api.getUser();
 
     assert.deepEqual(result, expected);
