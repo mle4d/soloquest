@@ -7,10 +7,10 @@ test('create user object from form data', (assert) => {
     const formData = new FormData();
   // set the values that would be from the form,
   // remember these are strings!
-    formData.set('username', 'emanresu');
+    formData.set('name', 'emanresu');
     formData.set('style', 'PIP');
     const expected = {
-        username: 'emanresu',
+        name: 'emanresu',
         style: 'PIP',
         cash: 20,
         fauxpas: 0

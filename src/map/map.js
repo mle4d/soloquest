@@ -11,6 +11,7 @@ const nav = document.getElementById('quests');
 
 const quests = api.getQuests();
 const user = api.getUser();
+
 if(isDenim(user) || hasCompletedAllQuests(user, quests)) {
     window.location = '../end/end/html';
 }

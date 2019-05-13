@@ -1,6 +1,6 @@
 function makeUser(formData) {
     const user = {
-        username: formData.get('username'),
+        name: formData.get('name'),
         style: formData.get('style'),
         cash: 20,
         fauxpas: 0,
