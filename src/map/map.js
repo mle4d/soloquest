@@ -2,15 +2,19 @@ import api from '../services/api.js';
 import createQuestLink from './create-quest-link.js';
 import loadProfile from '../load-profile.js';
 import createCompletedQuest from './create-completed-quest.js';
+import isDenim from './is-denim.js';
+import hasCompletedAllQuests from '.hasCompletedAllQuests.js';
 
 loadProfile();
 
-const nav = document.getElementById('quest');
+const nav = document.getElementById('quests');
 
-const quest = api.getQuests();
+const quests = api.getQuests();
 const user = api.getUser();
-
-for(let i = 0; i < quest.length; i++) {
+if(isDenim(user) || hasCompletedAllQuests(user, quests)) {
+    window.location = '../end/end/html';
+}
+for(let i = 0; i < quests.length; i++) {
     let quest = quest[i];
     let dom = null;
     if(user.completed[quest.id]) {

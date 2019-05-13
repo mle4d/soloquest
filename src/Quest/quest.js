@@ -7,7 +7,7 @@ import findById from '../find-by-id.js';
 loadProfile();
 
 const choiceParent = document.getElementById('choices');
-const style = document.getElementById('style');
+const image = document.getElementById('quest-img');
 const title = document.getElementById('quest-title');
 const description = document.getElementById('description');
 const formChoice = document.getElementById('quest-form');
@@ -20,7 +20,7 @@ const questId = searchParams.get('id');
 
 const quest = api.getQuest(questId);
 title.textContent = quest.title;
-style.src = '../../assets/avatar.png' + style.image;
+image.src = '../../assets/quests/' + quest.image;
 description.textContent = quest.description;
 
 for(let i = 0; i < quest.choices.length; i++) {
