@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Closet Quest</title>
+</head>
+<body>
+  <header>
+    <h1>Closet Quest</h1>
+  </header>
+  <main>
+    <form id="form">
+    <fieldset>
+      <label for="name">Username:</label>
+      <input id="name" name="name" type="text">
+        <legend><h2>Pick a Name &amp; Style!</h2></legend>
+        <div id="something">
+
+          <label class="style" for="PIP"><img src="">
+            <input type="radio" name="style" id="PIP" required value="PIP">
+            Pretty in Pink
+          </label>
+          <label class="style" for="PB"><img src="">
+            <input type="radio" name="style" id="PB" required value="PB">
+            Punky Bootster
+          </label>
+          <label class="style" for="CC"><img src="">
+            <input type="radio" name="style" id="CC" required value="CC">
+            Casual Cool
+          </label>
+        </div>
+    </fieldset>
+    <p>
+        <button id="submit">Get Dressed!</button>
+        </p>
+    </form>
+  </main>
+  <script type="module" src="./src/home/index.js"></script>
+</body>
+</html>

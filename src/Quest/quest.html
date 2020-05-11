@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Closet Quest</title>
+</head>
+<body>
+  <header>
+    <h1>Closet Quest</h1>
+    <section id="user-info">
+      <img id="style" src="../assests/avatar/.png">
+      <span id="username"></span>
+      Cash:<span id="cash"></span>
+      Faux Pas:<span id="fauxpas"></span>
+      </section>
+  </header>
+  <main>
+    <section>
+      <h2 id="quest-title">Pick a Bottom</h2>
+      <img id="quest-img" src="../assests/quests/pantsquest.png" alt="bottom options">
+    </section>
+    <section>
+        <h2 id="quest-title">Pick a top</h2>
+        <img id="quest-img" src="../assests/quests/shirtsquest.png" alt="top options">
+    </section>
+    <section>
+          <h2 id="quest-title">Pick a jacket</h2>
+          <img id="quest-img" src="../assests/quests/jacketsquest.png" alt="jacket options">
+    </section>
+    <section>
+      <p id="description"></p>
+    </section>
+      <form id="quest-form">
+        <p id="choices"></p>
+        <button id="submit-choice">Get Dressed!</button>
+      </form>
+      <section id="result" class="hidden"></section>
+      <button id="map" class="hidden">Go Back to Closet</button>
+  </main>
+  <script type="module" src="quest.js"></script>
+</body>
+</html>
